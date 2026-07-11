@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/debsportfolio',
-  images: {
-    unoptimized: true,
+  basePath: process.env.NODE_ENV === 'production' ? '/debsportfolio' : '',
+  images: { unoptimized: true,
   },
 }
 

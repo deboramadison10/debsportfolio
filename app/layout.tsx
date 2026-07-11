@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Nunito, Corben } from 'next/font/google'
 import './globals.css'
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
       },
       {
         url: '/miffy-tab.jpg',
-        type: 'image/svg+xml',
+        type: 'image/jpeg',
       },
     ],
     apple: '/miffy-tab.jpg',
@@ -40,7 +39,6 @@ export const viewport: Viewport = {
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
 }
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -53,7 +51,6 @@ export default function RootLayout({
     >
       <body className="font-sans antialiased">
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )

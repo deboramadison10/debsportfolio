@@ -18,7 +18,7 @@ const projects: Project[] = [
     title: "Office Resource Booking",
     description:
       "Led the design and implementation of the frontend and user interface for a web-based office resource booking system.",
-    image: "/projects/office-booking.png",
+    image: "projects/office-booking.png",
     tags: ["React", "UI/UX", "Frontend"],
     href: "https://github.com/deboramadison10/Office-Resource-Booking-System",
     cta: "Check Repo",
@@ -27,7 +27,7 @@ const projects: Project[] = [
     title: "Boeing Search Simulator",
     description:
       "Designed and developed the entire frontend and UI/UX for an air-to-ground search simulation website, including a custom Game Boy-style interface to visualize and compare search algorithms interactively.",
-    image: "/projects/search-simulator.png",
+    image: "projects/search-simulator.png",
     tags: ["UI/UX", "Visualization", "Algorithms"],
     href: "https://github.com/CS4091/TEAM_N",
     cta: "Check Repo",
@@ -36,7 +36,7 @@ const projects: Project[] = [
     title: "Gamora's Pup-venture",
     description:
       "A side-scrolling game built with Godot and Piskel in which players guide a corgi through agility tasks to obtain badges.",
-    image: "/projects/pup-venture.png",
+    image: "projects/pup-venture.png",
     tags: ["Godot", "Piskel", "Game Design"],
     href: "https://devpost.com/software/gamora-s-pup-venture",
     cta: "Check Devpost",
@@ -46,7 +46,7 @@ const projects: Project[] = [
     title: "Small Tech Business Website",
     description:
       "A responsive website for a small tech business, featuring a modern design and intuitive user experience. Created while testing out Figma Make.",
-    image: "/projects/small-tech-website.png",
+    image: "projects/small-tech-website.png",
     tags: ["Figma", "HTML", "CSS", "JavaScript", "UI/UX"],
     href: "https://www.figma.com/@debora_a34adc18",
     cta: "Check Design",
@@ -55,7 +55,7 @@ const projects: Project[] = [
     title: "Restaurant Reservation App",
     description:
       "A responsive mobile application for booking restaurant tables, featuring a clean design and seamless user experience.",
-    image: "/projects/restaurant-reservation.png",
+    image: "projects/restaurant-reservation.png",
     tags: ["Figma", "UI/UX", "Mobile App Design"],
     href: "https://www.figma.com/@debora_a34adc18",
     cta: "Check Design",
