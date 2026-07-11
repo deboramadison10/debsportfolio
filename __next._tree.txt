@@ -3,4 +3,4 @@
 :HL["/debsportfolio/_next/static/media/30b11fab0ca84bf6-s.p.01jjc63e_q5m-.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/debsportfolio/_next/static/media/58746c0bef5c2949-s.p.0lx-.~u_~x7kj.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/debsportfolio/about-deb.svg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"-FrVLeVQI-FYlSmuGndw9"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"O59deFrN8j5EJzC_v-Djz"}
