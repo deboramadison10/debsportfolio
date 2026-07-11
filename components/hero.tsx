@@ -14,7 +14,7 @@ export function Hero() {
         playsInline
         poster="/about-deb.svg"
       >
-        <source src="/hero-background.mp4" type="video/mp4" />
+        <video src={`${process.env.NEXT_PUBLIC_BASE_PATH}/hero-background.mp4`} />{/* <source src="/hero-background.mp4" type="video/mp4" /> */}
       </video>
 
       {/* readability overlay */}

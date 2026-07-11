@@ -68,7 +68,7 @@ export function About() {
             <div className="absolute -inset-4 rounded-[2.5rem] bg-accent/30 blur-xl" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/about-deb.svg"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/about-deb.svg`}// src="/about-deb.svg"
               alt="Illustration of Debora Madison"
               className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md object-contain"
             />
