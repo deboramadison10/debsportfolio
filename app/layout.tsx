@@ -24,11 +24,11 @@ export const metadata: Metadata = {
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/miffy-tab.jpg',
+        url: '/miffy-tab.jpeg',
         type: 'image/jpeg',
       },
     ],
-    apple: '/miffy-tab.jpg',
+    apple: '/miffy-tab.jpeg',
   },
 }
 
