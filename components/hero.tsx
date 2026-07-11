@@ -6,16 +6,11 @@ export function Hero() {
       id="home"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
-      <video
+      <img
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/gradient-background.jpeg`}
+        alt="Background gradient"
         className="absolute inset-0 size-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster={`${process.env.NEXT_PUBLIC_BASE_PATH}/about-deb.svg`}
-      >
-        <source src={`${process.env.NEXT_PUBLIC_BASE_PATH}/hero-background.mp4`} />{/* <source src="/hero-background.mp4" type="video/mp4" /> */}
-      </video>
+      />
 
       {/* readability overlay */}
       <div className="absolute inset-0 bg-background/55" />
