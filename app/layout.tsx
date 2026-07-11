@@ -14,21 +14,8 @@ export const metadata: Metadata = {
   description:
     'Portfolio of Debora Madison, a Computer Science graduate and aspiring UI/UI designer who loves crafting beautiful, creative products.',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/miffy-tab.jpeg',
-        type: 'image/jpeg',
-      },
-    ],
-    apple: '/miffy-tab.jpeg',
+      icon: '/debsportfolio/miffy-tab.jpeg',
+      apple: '/debsportfolio/miffy-tab.jpeg',
   },
 }
 
