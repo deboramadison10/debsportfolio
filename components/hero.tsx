@@ -12,9 +12,9 @@ export function Hero() {
         loop
         muted
         playsInline
-        poster="/about-deb.svg"
+        poster={`${process.env.NEXT_PUBLIC_BASE_PATH}/about-deb.svg`}
       >
-        <video src={`${process.env.NEXT_PUBLIC_BASE_PATH}/hero-background.mp4`} />{/* <source src="/hero-background.mp4" type="video/mp4" /> */}
+        <source src={`${process.env.NEXT_PUBLIC_BASE_PATH}/hero-background.mp4`} />{/* <source src="/hero-background.mp4" type="video/mp4" /> */}
       </video>
 
       {/* readability overlay */}
