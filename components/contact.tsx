@@ -15,7 +15,7 @@ const channels = [
     icon: MessageCircle,
     label: "Discord",
     value: "debae10",
-    href: undefined,
+    href: "https://discord.com/users/832688316319006721",
   },
   {
     icon: GithubIcon,
