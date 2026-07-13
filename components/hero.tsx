@@ -17,13 +17,13 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
         <p className="mb-4 font-heading text-sm uppercase tracking-[0.3em] text-primary">
-          Welcome to Deb&apos;s site
+          Welcome to my creative corner of the internet
         </p>
         <h1 className="text-balance font-heading text-4xl font-bold leading-tight text-teal sm:text-6xl">
           Hi, I&apos;m Deb!
         </h1>
         <p className="mx-auto mt-5 max-w-xl text-pretty text-lg leading-relaxed text-foreground/80">
-          Welcome to my creative world! Take a look into my work and projects.
+           Passionate about design, obsessed with the details.
         </p>
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-4">

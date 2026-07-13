@@ -14,7 +14,7 @@ const channels = [
   {
       icon: Download,
       label: "Resume",
-      value: "Download CV",
+      value: "Download Now",
       href: `${process.env.NEXT_PUBLIC_BASE_PATH}/DMadison_Resume.pdf`,
   },
   {
