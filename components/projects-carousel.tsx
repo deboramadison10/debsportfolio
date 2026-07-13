@@ -15,13 +15,23 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Gamora's Pup-venture",
+    description:
+      "A side-scrolling game built with Godot and Piskel in which players guide a corgi through agility tasks to obtain badges.",
+    image: "projects/pup-venture.png",
+    tags: ["Godot", "Piskel", "Game Design"],
+    href: "https://devpost.com/software/gamora-s-pup-venture",
+    cta: "Check Devpost",
+    award: "Best Retro Project — Missouri S&T PickHacks 2025",
+  },
+  {
     title: "Office Resource Booking",
     description:
       "Led the design and implementation of the frontend and user interface for a web-based office resource booking system.",
     image: "projects/office-booking.png",
     tags: ["React", "UI/UX", "Frontend"],
     href: "https://github.com/deboramadison10/Office-Resource-Booking-System",
-    cta: "Check Repo",
+      cta: "Check Repo",
   },
   {
     title: "Boeing Search Simulator",
@@ -31,16 +41,6 @@ const projects: Project[] = [
     tags: ["UI/UX", "Visualization", "Algorithms"],
     href: "https://github.com/CS4091/TEAM_N",
     cta: "Check Repo",
-  },
-  {
-    title: "Gamora's Pup-venture",
-    description:
-      "A side-scrolling game built with Godot and Piskel in which players guide a corgi through agility tasks to obtain badges.",
-    image: "projects/pup-venture.png",
-    tags: ["Godot", "Piskel", "Game Design"],
-    href: "https://devpost.com/software/gamora-s-pup-venture",
-    cta: "Check Devpost",
-    award: "Best Retro Project — Missouri S&T PickHacks 2025",
   },
   {
     title: "Small Tech Business Website",
