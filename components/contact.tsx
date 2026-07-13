@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { Mail, MessageCircle, Send } from "lucide-react"
 import { GithubIcon, LinkedinIcon } from "@/components/brand-icons"
+import { Mail, MessageCircle, Send, Download } from "lucide-react"
 
 const channels = [
   {
@@ -12,10 +12,10 @@ const channels = [
     href: "mailto:debmadison10@gmail.com",
   },
   {
-    icon: MessageCircle,
-    label: "Discord",
-    value: "debae10",
-    href: "https://discord.com/users/832688316319006721",
+      icon: Download,
+      label: "Resume",
+      value: "Download CV",
+      href: `${process.env.NEXT_PUBLIC_BASE_PATH}/DMadison_Resume.pdf`,
   },
   {
     icon: GithubIcon,
@@ -86,6 +86,7 @@ export function Contact() {
                   href={href}
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  download={label === "Resume" ? "DMadison_Resume.pdf" : undefined}
                   className={classes}
                 >
                   {inner}

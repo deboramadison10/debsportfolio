@@ -23,7 +23,7 @@ export function Hero() {
           Hi, I&apos;m Deb!
         </h1>
         <p className="mx-auto mt-5 max-w-xl text-pretty text-lg leading-relaxed text-foreground/80">
-          Welcome to my creative world! Take a look into my creative work and projects.
+          Welcome to my creative world! Take a look into my work and projects.
         </p>
 
         <div className="mt-9 flex flex-wrap items-center justify-center gap-4">

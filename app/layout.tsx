@@ -12,7 +12,7 @@ const corben = Corben({
 export const metadata: Metadata = {
   title: "Deb's Site",
   description:
-    'Portfolio of Debora Madison, a Computer Science graduate and aspiring UI/UI designer who loves crafting beautiful, creative products.',
+    'Portfolio of Debora Madison, a Computer Science graduate and UI/UI designer who loves crafting beautiful, creative products.',
   icons: {
       icon: '/debsportfolio/miffy-tab.jpeg',
       apple: '/debsportfolio/miffy-tab.jpeg',
