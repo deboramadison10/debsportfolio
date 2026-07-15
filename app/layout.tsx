@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Nunito, Corben } from 'next/font/google'
 import './globals.css'
+import { BackToTop } from '@/components/back-to-top'
 
 const nunito = Nunito({ variable: '--font-nunito', subsets: ['latin'] })
 const corben = Corben({
@@ -14,8 +15,8 @@ export const metadata: Metadata = {
   description:
     'Portfolio of Debora Madison, a Frontend Developer and UI/UX Designer who loves crafting beautiful, creative products.',
   icons: {
-      icon: '/debsportfolio/miffy-tab.jpeg',
-      apple: '/debsportfolio/miffy-tab.jpeg',
+    icon: '/debsportfolio/miffy-tab.jpeg',
+    apple: '/debsportfolio/miffy-tab.jpeg',
   },
 }
 
@@ -26,6 +27,7 @@ export const viewport: Viewport = {
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
 }
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -38,6 +40,7 @@ export default function RootLayout({
     >
       <body className="font-sans antialiased">
         {children}
+        <BackToTop />
       </body>
     </html>
   )
