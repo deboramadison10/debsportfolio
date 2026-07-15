@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   description:
     'Portfolio of Debora Madison, a Frontend Developer and UI/UX Designer who loves crafting beautiful, creative products.',
   icons: {
-    icon: '/debsportfolio/miffy-tab.jpeg',
-    apple: '/debsportfolio/miffy-tab.jpeg',
+    icon: '/debsportfolio/dm-logo.png',
+    apple: '/debsportfolio/dm-logo.png',
   },
 }
 
