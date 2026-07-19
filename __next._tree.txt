@@ -4,4 +4,4 @@
 :HL["/debsportfolio/_next/static/media/58746c0bef5c2949-s.p.0lx-.~u_~x7kj.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/debsportfolio/gradient-background.jpeg","image"]
 :HL["/debsportfolio/about-deb.svg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"kvKj2jJU7KzKLUYOpW0xp"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"y1slxhS1dtrA1sCj5Tmuy"}
