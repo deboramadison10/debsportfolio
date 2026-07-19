@@ -73,6 +73,7 @@ export function ProjectsCarousel() {
     const card = track.children[clamped] as HTMLElement | undefined
     if (card) {
       track.scrollTo({ left: card.offsetLeft - track.offsetLeft, behavior: "smooth" })
+      setActive(clamped)
     }
   }, [])
 
@@ -115,7 +116,7 @@ export function ProjectsCarousel() {
             <button
               type="button"
               aria-label="Previous project"
-              onClick={() => scrollToIndex(active - 1)}
+              onClick={() => scrollToIndex((active - 1 + projects.length) % projects.length)}
               disabled={active === 0}
               className="grid size-11 place-items-center rounded-full border-2 border-primary text-primary transition-colors hover:bg-primary hover:text-primary-foreground disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent disabled:hover:text-primary"
             >
@@ -124,7 +125,7 @@ export function ProjectsCarousel() {
             <button
               type="button"
               aria-label="Next project"
-              onClick={() => scrollToIndex(active + 1)}
+              onClick={() => scrollToIndex((active + 1) % projects.length)}
               disabled={active === projects.length - 1}
               className="grid size-11 place-items-center rounded-full border-2 border-primary text-primary transition-colors hover:bg-primary hover:text-primary-foreground disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent disabled:hover:text-primary"
             >
