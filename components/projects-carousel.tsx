@@ -141,7 +141,7 @@ export function ProjectsCarousel() {
           {projects.map((project) => (
             <article
               key={project.title}
-              className="flex w-[85%] shrink-0 snap-center flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-sm transition-shadow hover:shadow-lg sm:w-[60%] lg:w-[47%]"
+              className="flex w-[65%] shrink-0 snap-center flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-sm transition-shadow hover:shadow-lg sm:w-[55%] lg:w-[42%]"
             >
               <div className="relative aspect-[16/10] overflow-hidden bg-muted">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
