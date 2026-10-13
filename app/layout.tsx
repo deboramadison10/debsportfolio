@@ -15,8 +15,13 @@ export const metadata: Metadata = {
   description:
     'Portfolio of Debora Madison, a Frontend Developer and UI/UX Designer who loves crafting beautiful, creative products.',
   icons: {
-    icon: '/debsportfolio/dm-favicon.png',
-    apple: '/debsportfolio/dm-favicon.png',
+    icon: [
+      { url: '/debsportfolio/favicon.ico', sizes: '48x48' },
+      { url: '/debsportfolio/icon.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/debsportfolio/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
 }
 
