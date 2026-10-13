@@ -211,5 +211,5 @@ export function ProjectsCarousel() {
 </div>
       </div>
     </section>
-  )
+  ) 
 }
