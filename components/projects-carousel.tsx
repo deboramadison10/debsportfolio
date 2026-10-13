@@ -67,18 +67,19 @@ export function ProjectsCarousel() {
   const [active, setActive] = useState(0)
 
   const scrollToIndex = useCallback((index: number) => {
-    const track = trackRef.current
-    if (!track) return
-    const clamped = Math.max(0, Math.min(index, projects.length - 1))
-    const card = track.children[clamped] as HTMLElement | undefined
-    if (card) {
-      track.scrollTo({ left: card.offsetLeft - track.offsetLeft, behavior: "smooth" })
-      setActive(clamped)
-    }
-  }, [])
+      const track = trackRef.current
+      if (!track) return
+      const clamped = Math.max(0, Math.min(index, projects.length - 1))
+      const card = track.children[clamped] as HTMLElement | undefined
+      if (!card) return
+      const left =
+        card.offsetLeft - track.offsetLeft - (track.clientWidth - card.clientWidth) / 2
+      track.scrollTo({ left, behavior: "smooth" })
+}, [])
 
   // track the most-centered card while scrolling
   useEffect(() => {
+
     const track = trackRef.current
     if (!track) return
     const onScroll = () => {
@@ -116,7 +117,7 @@ export function ProjectsCarousel() {
             <button
               type="button"
               aria-label="Previous project"
-              onClick={() => scrollToIndex((active - 1 + projects.length) % projects.length)}
+              onClick={() => scrollToIndex(active - 1)}
               disabled={active === 0}
               className="grid size-11 place-items-center rounded-full border-2 border-primary text-primary transition-colors hover:bg-primary hover:text-primary-foreground disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent disabled:hover:text-primary"
             >
@@ -125,7 +126,7 @@ export function ProjectsCarousel() {
             <button
               type="button"
               aria-label="Next project"
-              onClick={() => scrollToIndex((active + 1) % projects.length)}
+              onClick={() => scrollToIndex(active + 1)}
               disabled={active === projects.length - 1}
               className="grid size-11 place-items-center rounded-full border-2 border-primary text-primary transition-colors hover:bg-primary hover:text-primary-foreground disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent disabled:hover:text-primary"
             >
@@ -198,20 +199,16 @@ export function ProjectsCarousel() {
           ))}
         </div>
 
-        <div className="mt-2 flex justify-center gap-2.5">
+        <div className="mt-2 flex justify-center gap-2.5" aria-hidden="true">
           {projects.map((project, i) => (
-            <button
-              key={project.title}
-              type="button"
-              aria-label={`Go to ${project.title}`}
-              aria-current={active === i}
-              onClick={() => scrollToIndex(i)}
-              className={`h-2.5 rounded-full transition-all ${
-                active === i ? "w-8 bg-primary" : "w-2.5 bg-primary/30"
-              }`}
-            />
-          ))}
-        </div>
+         <span
+          key={project.title}
+          className={`h-2.5 rounded-full transition-[width,background-color] ${
+          active === i ? "w-8 bg-primary" : "w-2.5 bg-primary/30"
+      }`}
+    />
+  ))}
+</div>
       </div>
     </section>
   )
