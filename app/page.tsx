@@ -4,6 +4,7 @@ import { About } from "@/components/about"
 import { ProjectsCarousel } from "@/components/projects-carousel"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import {Certifications} from "@/components/certifications";
 
 export default function Page() {
   return (
@@ -13,6 +14,7 @@ export default function Page() {
         <Hero />
         <About />
         <ProjectsCarousel />
+          <Certifications/>
         <Contact />
       </main>
       <Footer />
