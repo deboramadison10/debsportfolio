@@ -40,8 +40,9 @@ export function About() {
               and I love turning a rough idea into something visually considered and easy to use. 
             </p>
             <p>
-              In my free time, I enjoy spending quality moments with my family,
-              traveling, and capturing memories with my film cameras.
+              Outside of tech, I’m a modern reformer Pilates instructor at La Forme. In my free time,
+              I love traveling, spending quality time with my family,
+              and capturing memories on my film cameras.
             </p>
           </div>
 
